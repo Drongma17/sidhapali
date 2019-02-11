@@ -1,0 +1,34 @@
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="container afu-container">
+
+  <h3 class="title">upload your file</h3>
+
+  <div class="border">
+    <h4 class="headerposition">Upload File</h4>
+    <angular-file-uploader #afu1 [resetUpload]=resetUpload1 [config]="afuConfig1">
+    </angular-file-uploader>
+  </div>
+  <br>
+  <br>
+  <div class="border">
+    <h4 class="headerposition">drag and Drop</h4>
+    <angular-file-uploader #afu3 [config]="afuConfig3" [resetUpload]=resetUpload3 (ApiResponse)="DocUpload($event)">
+    </angular-file-uploader>
+  </div>
+  <br>
+  <br>
+  <div class="border">
+    <h4 class="headerposition"> attachPin</h4>
+    <angular-file-uploader #afu2 [config]="afuConfig2" [resetUpload]=resetUpload2 (ApiResponse)="DocUpload($event)">
+    </angular-file-uploader>
+  </div>
+
+  <!--  <br>
+  <br> -->
+  <!-- <button class="btn btn-info resetBtn" (click)="resetfu(1)">Reset 1</button>
+  <button class="btn btn-info resetBtn" (click)="resetfu(2)">Reset 2</button> -->
+
+</div>
